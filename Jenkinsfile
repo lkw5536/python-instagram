@@ -4,7 +4,7 @@ node{
                 git 'https://github.com/lkw5536/python-instagram.git'
         }
         stage('Build image') {
-                python_instagram_test = docker.build("lkw5535/python_instagram")
+                python_instagram_test = docker.build("python_instagram:latest")
         }
         stage('Test image') {
                 python_instagram_test.inside{
