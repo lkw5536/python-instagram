@@ -1,6 +1,4 @@
 #!/usr/bin/env python
-
-
 import types
 import six
 try:
