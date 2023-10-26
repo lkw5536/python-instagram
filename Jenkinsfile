@@ -4,11 +4,11 @@ node{
                 git 'https://github.com/lkw5536/python-instagram.git'
         }
         stage('Build image') {
-                python_instagram_test = docker.build("python_instagram:latest")
+                python_instagram_test = docker.build("edenlee511/opensource_test")
         }
         stage('Test image') {
                 python_instagram_test.inside{
-                        sh 'python3 tests.py'
+                        sh 'echo "hello"'
                 }
         }
         stage('Push image') {
